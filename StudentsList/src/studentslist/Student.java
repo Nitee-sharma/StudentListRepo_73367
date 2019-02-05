@@ -14,18 +14,16 @@ public class Student {
    
     private String name;
     private int id;
-    private String DoB;
-    private int maxHrs;
  
     public Student()
     {
-        this.name = "Not Set";
-        this.id = 0;
+        name = "Not Set";
+        id = 0;
     }
     public Student(String givenName,int givenId)
     {
-        this.name = givenName;
-        this.id = givenId;
+        name = givenName;
+        id = givenId;
     }
     
     public void setName(String givenName)
@@ -40,25 +38,11 @@ public class Student {
     
     public void setId(int givenId)
     {
-            id = givenId;
+            this.id = givenId;
     }
     
     public int getId()
     {
-        return this.id;
-    }
-
-    /**
-     * @return the DoB
-     */
-    public String getDoB() {
-        return DoB;
-    }
-
-    /**
-     * @param DoB the DoB to set
-     */
-    public void setDoB(String DoB) {
-        this.DoB = DoB;
+        return id;
     }
 }
